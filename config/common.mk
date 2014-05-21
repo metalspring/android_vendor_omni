@@ -64,3 +64,14 @@ PRODUCT_COPY_FILES += \
 
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
+
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/apk/ViPER4Android_FX_A4.x.apk:system/app/ViPER4Android_FX_A4.x.apk
+
+# SU Support
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/bin/su:system/xbin/daemonsu \
+    vendor/omni/prebuilt/bin/su:system/xbin/su \
+    vendor/omni/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/omni/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
